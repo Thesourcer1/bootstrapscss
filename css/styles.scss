@@ -15,6 +15,7 @@ body {
 }
 h1, h2, h3, h4, h5, p, li{
   font-family: $font;
+  color: $fontcolor;
 }
 
 nav {
@@ -39,18 +40,18 @@ nav {
   h4 {
     font-size: 24px;
     font-weight: 400;
-    padding-right: 10px;
+    padding-top: 22px;
+
   }
   .programmer-kode {
     .progress {
-      height: 5rem;
       font-size: 0.85rem;
+      height: 2rem;
       background-color: $pink;
       .progress-bar {
         background: $secondary;
         color: white;
         font-family: $font;
-        height: 20px;
       }
     }
   }
@@ -71,4 +72,38 @@ nav {
       }
     }
   }
+}
+.container-fluid {background-color: $primary;
+.kontakt {
+  .text-dark {
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  .btn-secondary {
+    background-color: $secondary;
+    border: none;
+
+  }
+
+}
+.kontaktmap {
+    .maptekst {
+      text-align: center;
+      padding-top: 20px;
+      svg {
+        color: $fontcolor;
+        width: 40px;
+        height: auto;
+        fill: $fontcolor;
+      }
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.text-dark {
+  color: $fontcolor;
 }

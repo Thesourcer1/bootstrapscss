@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1284430910.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #f1e6e2; color:#2A2547;">
+        <a href="portfolio.html" class="navbar-brand">Sara Henriksen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Cv</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container pt-5 mt-5">
+        <h2 class="text-xs-center text-dark">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4  col-sm-6">
+                <img class="img-fluid" style="background-color: white" src="img/nokia.png" alt="" />
+                <h4 class="text-main">Bootstrap Nokia</h4>
+                <p class="text-dark">Nokia, var et oplagt valg, når det gælder om at sætte det op i bootstrap. det disse to har tilfælles er at de begge er robuste, men samtidigt simple når det kommer til brugeroplevelse.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid" src="img/autohusetvest.png" alt="" />
+                <h4 class="text-main">Autohuset Vestergaard</h4>
+                <p class="text-dark">En kunde opgave - de vil have blåt og en kampagneside om jeep.. vi gav dem blå jeeps!</p>
+            </div>
+            <div class="clearfix hidden-md-up"></div>
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid" src="img/egenvirksomhed.png" alt="" />
+                <h4 class="text-main">MassWeb</h4>
+                <p class="text-dark">Den eksistere ikke i virkeligheden men.. det skulle man tro</p>
+            </div>
+            <div class="clearfix hidden-sm-down"></div>
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid" src="img/dominio%20de%20puntas.png" alt="" />
+                <h4 class="text-main">Dominio de pontas</h4>
+                <p class="text-dark"> En vinoplevelse med rå og moderne farver, er bare sagen</p>
+            </div>
+            <div class="clearfix hidden-md-up"></div>
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid" src="img/scoreboard.png" alt="" />
+                <h4 class="text-main">Scoreboard til mini-golf</h4>
+                <p class="text-dark"> Man ved aldrig hvornår man får brug for et scoreboard.
+
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid" src="img/ghostboostrapscss.png" alt="" />
+                <h4 class="text-main">Bootstrap scss opgave</h4>
+                <p class="text-dark">jeg tør vædde med, at du ikke tør trykke på ordet "ghost"
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    feather.replace();
+</script>
+</body>
+</html>

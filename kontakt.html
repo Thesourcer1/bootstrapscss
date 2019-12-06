@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1284430910.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #f1e6e2; color:#2A2547;">
+        <a href="portfolio.html" class="navbar-brand">Sara Henriksen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Cv</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="kontakt mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-right text-sm-center">
+                    <h2 class="">Kontakt</h2>
+                    <p class="lead"><em>Interesset i et samarbejde? -</em> Kontakt mig enten gennem mine sociale medier eller gennem denne kontakt side. så vi snakke om det over noget kaffe </p>
+                    mød mig på: <a target="_blank" href="https://github.com/" class="text-dark">Github</a> | <a target="_blank" href="https://www.linkedin.com/" class="text-dark">LinkedIn</a>
+                </div>
+                <div class="col-md-6 text-left">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="inputName">Navn</label>
+                            <input class="form-control" type="text" id="inputName" placeholder="Navn" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="inputName">Email</label>
+                            <input class="form-control" type="email" id="inputEmail" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="inputComments">Besked</label>
+                            <textarea class="form-control" placeholder="Besked" id="inputComments" cols="30" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-secondary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid kontaktmap">
+            <div class="maptekst">
+                <i data-feather="map-pin"></i>
+                <h2>Find mig</h2>
+            </div>
+            <div id="map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144993.88630115267!2d11.206583653433267!3d55.401114860347136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d6162e0d4cdb7%3A0xbf0409f313af0f00!2s4200%20Slagelse!5e0!3m2!1sda!2sdk!4v1574935112720!5m2!1sda!2sdk"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    feather.replace();
+</script>
+</body>
+</html>
