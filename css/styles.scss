@@ -9,6 +9,8 @@ $font:"halyard display",calibri light, sans-serif;
 $bigfont-size: 55px ;
 $smallfont-size: 35px ;
 
+$animation-delay: .7s;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 body {
   background: $primary;
@@ -52,11 +54,13 @@ nav {
         background: $secondary;
         color: white;
         font-family: $font;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
       }
     }
   }
 }
-
 .om-mig2 {
   .edu {
       color: $fontcolor;
@@ -106,4 +110,46 @@ nav {
 }
 .text-dark {
   color: $fontcolor;
+}
+
+.kontaktinfo {
+  .kontaktitems {
+    .some {
+      a {
+        .fab {
+          font-size: 24px;
+          border: 1px solid black;
+          border-radius: 50px;
+          width: 45px;
+          height: 45px;
+          color: black;
+          display: flex;
+          padding-top: 10px;
+
+          &:after,:before {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fab {
+  font-size: 24px;
+  border: 1px solid $fontcolor;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  color: $fontcolor;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 10px;
+
+  &:hover {
+   color: white;
+    background-color: $secondary;
+    border-color: $secondary;
+  }
 }
