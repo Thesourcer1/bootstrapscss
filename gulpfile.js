@@ -6,6 +6,7 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const terser = require("gulp-terser");
 const rename = require("gulp-rename");
+const feather = require('feather-icons');
 
 function styles() {
     return(

@@ -18,8 +18,9 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/1284430910.js" crossorigin="anonymous"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,27 +31,10 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-    <p class="text">click on "ghost"</p>
-
-    <div class="container">
-        <div class="ghost"> ghost </div>
-        <div class="message"> BOO! </div>
-    </div>
-
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/simple_plugin.js"></script>
-<script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
     $(document).ready(function (e) {
-        $(".ghost") .click(function() {
-            $("body, .text, .container").simple_plugin({
-                colors: {
-                    bgColor: "black",
-                    color: "white",
-                }
-            });
-        });
     });
 </script>
 </body>
